@@ -5,15 +5,17 @@ You can use this class to auto inject models into laravel controllers' actions.
 Add a form to your view and assign to your inputs, names congruent to properties of your model.
 
 Example:
-
+```
 <form>
   <input type="textbox" name="email" />
   <input type="textbox" name="name" />
   <input type="password" name="password" />
 </form>
+```
 
 The model will be defined as follow:
 
+```
 class UserModel{
   /*Extension*/
   use SerializableModel;
@@ -33,12 +35,15 @@ class UserModel{
     return $this;
   }
 }
+```
 
 Your controller will be defined as follow:
 
+```
 class DefaultController extends Controller
 {
     public function action(User $user){
       /*$user will have all properties, specified by '$ToSerialize', filled*/
     }
 }
+```
