@@ -1,5 +1,5 @@
 # Laravel-SerializableModel
-With this php class you can emulate the binding model
+With this php class you can bind models to view forms.
 Add this class to your laravel project, into the path 'app/Helpers' (you can customize it as you want).
 You can use this class to auto inject models into laravel controllers' actions.
 Add a form to your view and assign to your inputs, names congruent to properties of your model.
